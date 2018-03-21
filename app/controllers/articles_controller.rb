@@ -34,7 +34,10 @@ class ArticlesController < ApplicationController
     end
 
   end
-
+  def index
+    #@articles instance variable can be named anything
+    @articles = Article.all
+  end
   private
     def article_params
       params.require(:article).permit(:title, :description)
