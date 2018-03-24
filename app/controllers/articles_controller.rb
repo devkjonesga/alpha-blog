@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    #@article = Article.find(params[:id]) #moved to private method
+    #@article = Article.find(params[:id]) #moved to private method#
   end
 
   def edit
